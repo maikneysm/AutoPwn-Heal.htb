@@ -1,4 +1,4 @@
-# Heal AutoPwn – HTB Machine Exploit Tool
+# Heal HTB AutoPwn – Autopwn Script
 
 A full exploitation automation script for the **Heal** Linux machine on Hack The Box. Full write Up -> [WriteUp.md](https://github.com/maikneysm/AutoPwn-Heal.htb/blob/main/WriteUp.md)
 ## 📋 Description
