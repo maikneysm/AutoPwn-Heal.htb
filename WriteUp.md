@@ -85,7 +85,7 @@ More information:
 
 Logged in to LimeSurvey with `ralph@heal.htb:147258369`
 http://take-survey.heal.htb/index.php/admin/authentication/sa/login
-![[lime_survey_login.png]]
+<img src="lime_survey_login.png" alt="login Lime Survey" width="700"/>
 To exploit the vulnerability, a malicious plugin was created consisting of two files:
 **`config.xml`**
 ```xml
@@ -124,9 +124,9 @@ Then accessed the plugin manager at:
 http://take-survey.heal.htb/index.php/admin/pluginmanager/sa/index
 ```
 Used the **"Upload & Install"** button to upload the `pwned.zip` plugin.
-![[lime_Survey_zip_upload.png]]
+<img src="lime_Survey_zip_upload.png" alt="Upload Plugin pwned" width="700"/>
 After uploading, the plugin appeared in the plugin list and was manually **activated**.
-![[lime_survey_active_pwned_plugin.png]]
+<img src="lime_survey_active_pwned_plugin.png" alt="Active Plugin pwned" width="700"/>
 Once active, the reverse shell script was executed by visiting: http://take-survey.heal.htb/upload/plugins/pwned/revshell.php
 Established a reverse shell as `www-data`.
 ```bash
