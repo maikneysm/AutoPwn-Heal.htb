@@ -42,12 +42,6 @@ HEADERS = {
     "Accept": "application/json, text/plain, */*"
 }
 
-PROXY = {
-    "http": "http://127.0.0.1:8080",
-    "https": "http://127.0.0.1:8080"
-}
-
-
 # Register user
 def register_user(username, email, password):
     data = {
@@ -159,7 +153,7 @@ def limesurvey_login(username, password):
         "login_submit": "login"
     }
 
-    login_resp = session.post(f"{LIMESURVEY_URL}/index.php/admin/authentication/sa/login", data=data, verify=False, proxies=PROXY)
+    login_resp = session.post(f"{LIMESURVEY_URL}/index.php/admin/authentication/sa/login", data=data, verify=False)
     if "logout" in login_resp.text:
         print("[+] LimeSurvey login successful")
         return session
