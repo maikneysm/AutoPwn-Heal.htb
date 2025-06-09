@@ -126,6 +126,7 @@ http://take-survey.heal.htb/index.php/admin/pluginmanager/sa/index
 Used the **"Upload & Install"** button to upload the `pwned.zip` plugin.
 <img src="lime_Survey_zip_upload.png" alt="Upload Plugin pwned" width="700"/>
 After uploading, the plugin appeared in the plugin list and was manually **activated**.
+
 <img src="lime_survey_active_pwned_plugin.png" alt="Active Plugin pwned" width="700"/>
 Once active, the reverse shell script was executed by visiting: http://take-survey.heal.htb/upload/plugins/pwned/revshell.php
 Established a reverse shell as `www-data`.
