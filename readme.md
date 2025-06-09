@@ -15,10 +15,6 @@ This tool automates the following:
 - Python 3.8+
 - `requests`
 - `bs4`
-- `colorama` (optional for colored output)
-- A working `burpsuite` proxy on localhost:8080 (if you want to intercept traffic)
-    
-
 Install dependencies with:
 
 ```bash
