@@ -15,6 +15,7 @@ This tool automates the following:
 - Python 3.8+
 - `requests`
 - `bs4`
+  
 Install dependencies with:
 
 ```bash
