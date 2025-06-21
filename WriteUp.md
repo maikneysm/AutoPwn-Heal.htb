@@ -6,6 +6,7 @@
 - **Machine:** [https://app.hackthebox.com/machines/Heal](https://app.hackthebox.com/machines/Heal)
 - **Category:** Linux / Web / LFI / CVE / PrivEsc
 - **Difficulty:** Medium
+- **AutoPwn Exploit script: 🔗** → [autopwn.py](https://github.com/maikneysm/AutoPwn-Heal.htb/blob/main/autopwn.py)
 - **Summary:** The target hosted multiple subdomains. An LFI vulnerability on the API subdomain allowed access to sensitive configuration and database files. Credentials were extracted from a SQLite DB and reused to access a LimeSurvey instance vulnerable to authenticated plugin RCE (CVE-2021-44967). Shell access was gained via a malicious plugin. Privilege escalation was achieved by abusing a misconfigured Consul service with root execution privileges.
     
 ---
